@@ -1,0 +1,41 @@
+Gui:
+  Size: 36 #界面大小
+  Title: '&6每日在线奖励'
+  #Gui内的物品
+  Items:
+    #槽位
+    0,1,2,3,4,5,6,7,8:
+      Type: 'STAINED_GLASS_PANE-11' #物品ID
+      DisplayName: '&6在线奖励'
+      Lore:
+        - '&7今日在线时间: %onlinereward_time_day%  (%onlinereward_lefttime_DayReward1%)'
+        - '&7本周在线时间: %onlinereward_time_week%  (%onlinereward_lefttime_WeekReward1%)'
+        - '&7本月在线时间: %onlinereward_time_month%  (%onlinereward_lefttime_MonthReward1%)'
+    27,28,29,30,31,32,33,34,35:
+      Type: 'STAINED_GLASS_PANE-2' #物品ID
+      DisplayName: '& 6在线奖励'
+      Lore:
+        - '&7今日在线时间: %onlinereward_time_day%  (%onlinereward_lefttime_DayReward1%)'
+        - '&7本周在线时间: %onlinereward_time_week%  (%onlinereward_lefttime_WeekReward1%)'
+        - '&7本月在线时间: %onlinereward_time_month%  (%onlinereward_lefttime_MonthReward1%)'
+    9:
+      Type: 'STAINED_GLASS_PANE-10'
+      DisplayName: '&a在线奖励1'
+      Lore:
+        - '需要今日在线 60min 领取'
+      Commands:
+        - 'olr receive DayReward1'
+    10:
+      Type: 'STAINED_GLASS_PANE-10'
+      DisplayName: '&a在线奖励2'
+      Lore:
+        - '需要本周在线 48h 领取'
+      Commands:
+        - 'olr receive WeekReward1'
+    11:
+      Type: 'STAINED_GLASS_PANE-10'
+      DisplayName: '&a在线奖励3'
+      Lore:
+        - '需要本月在线 168h 领取'
+      Commands:
+        - 'olr receive MonthReward1'

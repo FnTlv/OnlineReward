@@ -1,0 +1,18 @@
+RewardSettings:
+  #DayGift1为自定义奖励ID，不重复即可
+  DayReward1:
+    Type: 'DAY' #每日在线奖励
+    Time: '60m' #60分钟l
+    Reward: #获取奖励时执行命令 支持papi变量
+      - 'eco give %player_name% 10'
+      - 'eco give %player_name% 20'
+  WeekReward1:
+    Type: 'WEEK'
+    Time: '48h' #48h
+    Reward: #获取奖励时执行命令 支持papi变量 支持执行多条命令
+      - 'eco give %player_name% 20'
+  MonthReward1:
+    Type: 'MONTH'
+    Time: '7d' #7d,等于168h
+    Reward: #获取奖励时执行命令 支持papi变量 支持执行多条命令
+      - 'eco give %%player_name% 30'

@@ -1,0 +1,9 @@
+name: OnlineReward
+version: '1.0'
+main: com.github.fntlv.onlinereward.OnlineReward
+authors: [FnTlv]
+depend: [PlaceholderAPI]
+commands:
+  onlinereward:
+    aliases:
+      - "olr"
